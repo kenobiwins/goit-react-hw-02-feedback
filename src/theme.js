@@ -9,7 +9,7 @@ export const theme = {
     backgroundSecondary: '#e0e4e8',
     backgroundTableHead: '#78e0e6',
     borderColor: '#b8b2b2b3',
-    primary: '#07c',
+    primary: '#8590bc',
     secondary: '#05a',
     accent: '#609',
     muted: '#f6f6f6',
