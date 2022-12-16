@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-import { ButtonGroup, Container } from './FeedbackVidget/FeedbackVidget.styled';
+import { ButtonGroup, Container } from './BaseStyles/BaseStyles.styled';
 import { Section } from './Section/Section';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Statistics } from './Statistics/Statistics';
@@ -44,7 +44,7 @@ export class App extends Component {
     if (!result) {
       return this.state.good;
     }
-    return result.toFixed(2);
+    return Math.round(result);
   };
 
   render() {
