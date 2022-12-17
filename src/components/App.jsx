@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-import { ButtonGroup, Container } from './BaseStyles/BaseStyles.styled';
+import { Container } from './BaseStyles/BaseStyles.styled';
 import { Section } from './Section/Section';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Statistics } from './Statistics/Statistics';
@@ -52,17 +52,10 @@ export class App extends Component {
     return (
       <Container>
         <Section title={'Please leave feedback'}>
-          <ButtonGroup>
-            {Object.keys(this.state).map((el, i) => {
-              return (
-                <FeedbackOptions
-                  key={i}
-                  options={el}
-                  onLeaveFeedback={this.handleClick}
-                />
-              );
-            })}
-          </ButtonGroup>
+          <FeedbackOptions
+            options={Object.keys(this.state)}
+            onLeaveFeedback={this.handleClick}
+          />
         </Section>
 
         <Section title={'Statistics'}>
