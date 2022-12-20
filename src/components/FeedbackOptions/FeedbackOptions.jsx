@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import { ButtonGroup } from '../BaseStyles/BaseStyles.styled';
+import { ButtonGroup } from '../../BaseStyles/BaseStyles.styled';
+// import { ButtonGroup } from 'BaseStyles/BaseStyles.styled';
 import { Button } from './FeedbackOptions.styled';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
@@ -15,6 +16,6 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
 };
 
 FeedbackOptions.propTypes = {
-  options: PropTypes.array.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };

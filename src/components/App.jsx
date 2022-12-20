@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-import { Container } from './BaseStyles/BaseStyles.styled';
+import { Container } from '../BaseStyles/BaseStyles.styled';
 import { Section } from './Section/Section';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Statistics } from './Statistics/Statistics';
